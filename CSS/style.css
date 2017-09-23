@@ -116,7 +116,7 @@ footer {
 /* sidebar */
 
 .sidebar {
-  float: right;
+  /*float: right;*/
   width: 100%;
   max-width: 270px;
   padding: 30px;
@@ -152,7 +152,7 @@ h3,
 }
 
 .main-section {
-  float: left;
+  /*float: left;*/
   width: 100%;
   max-width: 650px;
   padding: 30px;
@@ -247,17 +247,19 @@ input[type=submit] {
 
 /*media query*/
 
-@media screen and (max-width:980px) {
+@media screen and (min-width:769px) {
   
   #container{
     width: 100%;
   }
 
   .main-section {
+    float: left;
     width: 65%;
   }
 
   .sidebar {
+    float: right;
     width: 35%
   }
 
@@ -275,13 +277,9 @@ input[type=submit] {
     width: 100%;
   }
 
-  .work {
-    float: left;
-    width: 46%;
-  }
-
   .main-section {
-    float: none;
+    /*float: none;*/
+    /*float: left;*/
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
@@ -289,7 +287,9 @@ input[type=submit] {
   }
 
   .sidebar {
-    float: none;
+    /*clear:both;*/
+    /*float: none;*/
+    /*float: left;*/
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
